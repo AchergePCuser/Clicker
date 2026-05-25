@@ -316,12 +316,14 @@ while run:
 
         if bogat == 1:
             if 1600 <= pos[0] <=  1740 and 155 <= pos[1] <= 190:
+                money = 100
                 bf.close()
                 bf = open(".venv/bogat","w")
                 bf.write("0")
                 f.close()
                 f = open(".venv/money","w")
-                f.write("100")
+                f.write(str(money))
+
         if 1600 <= pos[0] <= 1700 and 945 <= pos[1] <= 975:
             if r == 1:
                 rf.close()
